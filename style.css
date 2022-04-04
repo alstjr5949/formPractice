@@ -1,0 +1,154 @@
+@import "reset.css";
+
+body {
+  background-color: #f0ebf8;
+  display: flex;
+  justify-content: center;
+}
+
+/*가운데 정렬*/
+.wrapper {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/*Header*/
+.header {
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  padding: 20px;
+  border-top: 8px solid #673ab8;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.header p {
+  font-size: 12px;
+}
+
+/*Form*/
+
+fieldset {
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  padding: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+fieldset p {
+  margin-bottom: 20px;
+}
+
+/*Radio, Checkbox 세로정렬*/
+
+label {
+  font-size: 12px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+label.radioLabel,
+label.checkLabel {
+  padding-left: 25px;
+}
+
+/*단일 페이지이기 때문에 type사용 class사용이 우선!*/
+
+input[type="radio"],
+input[type="checkbox"] {
+  position: absolute;
+  top: -5px;
+  left: 0;
+}
+
+/*Text type 공통 CSS*/
+
+input[type="text"] {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 5px 0px;
+}
+
+/*포부 width 변경*/
+
+input[name="aspiration"] {
+  width: 55%;
+}
+
+/*Select*/
+
+select[name="hateQuestion"] {
+  width: 40%;
+  padding: 10px;
+  border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+/*Date & Time 공통*/
+
+.dateTimeLabel {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/*Date*/
+
+input[type="date"] {
+  width: 30%;
+  font-size: 12px;
+  word-spacing: -5px;
+  border: none;
+  color: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/*Time*/
+
+input[type="time"] {
+  width: 25%;
+  border: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/*Button 정렬 & 디자인*/
+
+.btnBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+button[type="submit"] {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #673ab8;
+  color: white;
+}
+
+button[type="reset"] {
+  border: none;
+  background-color: transparent;
+  color: #673ab8;
+  padding: 8px;
+}
+
+/*hidden class*/
+.hidden {
+  display: none;
+}

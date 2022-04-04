@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1>나와 잘 맞는 회사는?</h1>
+        <p>가고 싶은 회사에 대한 호감도를 조합니다. 아이고 의미 없다.</p>
+      </header>
+      <main>
+        <form action="https://mingstone.tistory.com/">
+          <fieldset>
+            <legend class="hidden">마음에 드는 회사</legend>
+            <p>다음 문자중에 왠지 마음에 드는 것을 하나 고르세요.</p>
+            <label class="radioLabel" for="naver">
+              <input
+                type="radio"
+                name="favCorp"
+                value="naver"
+                id="naver"
+                required
+              />
+              네</label
+            >
+            <label class="radioLabel" for="kakao">
+              <input type="radio" name="favCorp" value="kakao" id="kakao" />
+              카</label
+            >
+            <label class="radioLabel" for="line">
+              <input type="radio" name="favCorp" value="line" id="line" />
+              라</label
+            >
+            <label class="radioLabel" for="coupang">
+              <input type="radio" name="favCorp" value="coupang" id="coupang" />
+              쿠</label
+            >
+            <label class="radioLabel" for="jecoba">
+              <input
+                type="radio"
+                name="favCorp"
+                value="jejuCoding"
+                id="jecoba"
+              />
+              베</label
+            >
+          </fieldset>
+          <fieldset>
+            <legend class="hidden">어떤 메신저</legend>
+            <p>
+              친구와 문자를 합니다. 다음중 어떤 메신저를 이용하시겠습니까? 모두
+              골라주세요.
+            </p>
+            <label class="checkLabel" for="kakaotalk">
+              <input
+                type="checkbox"
+                name="messanger"
+                value="kakaotalk"
+                id="kakaotalk"
+              />
+              카카오톡</label
+            >
+            <label class="checkLabel" for="lineM">
+              <input
+                type="checkbox"
+                name="messanger"
+                value="lineM"
+                id="lineM"
+              />
+              라인</label
+            >
+            <label class="checkLabel" for="instagramDM">
+              <input
+                type="checkbox"
+                name="messanger"
+                value="instagramDM"
+                id="instagramDM"
+              />
+              인스타그램 디엠</label
+            >
+            <label class="checkLabel" for="nateOn">
+              <input
+                type="checkbox"
+                name="messanger"
+                value="nateOn"
+                id="nateOn"
+              />
+              네이트온</label
+            >
+            <label class="checkLabel" for="buddybuddy">
+              <input
+                type="checkbox"
+                name="messanger"
+                value="buddybuddy"
+                id="buddybuddy"
+              />
+              버디버디</label
+            >
+            <label class="checkLabel" for="sayclub">
+              <input
+                type="checkbox"
+                name="messanger"
+                value="sayclub"
+                id="sayclub"
+              />
+              세이클럽</label
+            >
+          </fieldset>
+          <fieldset>
+            <legend class="hidden">면접포부</legend>
+            <p>면접에서 자신의 포부를 한 문장으로 얘기한다면?</p>
+            <label class="hidden" for="aspiration"
+              >면접에서 자신의 포부를 한 문장으로 얘기한다면?</label
+            >
+            <input
+              type="text"
+              name="aspiration"
+              id="aspiration"
+              placeholder="내 답변"
+            />
+          </fieldset>
+          <fieldset>
+            <legend class="hidden">면접 전 나에게 해주고픈 말</legend>
+            <p>
+              당신은 지금 한 기업의 최종면접을 앞두고 있습니다. 면접장에
+              들어가기 직전, 자기 자신에게 해주고 싶은말은?
+            </p>
+            <label class="hidden" for="mindSet"
+              >최종면접 전 나에게 해주고 싶은말</label
+            >
+            <input
+              type="text"
+              name="mindSet"
+              id="mindSet"
+              placeholder="내 답변"
+            />
+          </fieldset>
+          <fieldset>
+            <legend class="hidden">면접 때 듣기 싫은 질문</legend>
+            <p>다음 중 기술 면접때 듣고 싶은 질문이 아닌것은?</p>
+            <label class="hidden" for="hateQuestion"
+              >면접때 듣기 싫은 기술 질문</label
+            >
+            <select name="hateQuestion" id="hateQuestion" required>
+              <option value="">선택</option>
+              <option value="html">HTML 관련 질문</option>
+              <option value="css">CSS 관련 질문</option>
+              <option value="js">JS 관련 질문</option>
+              <option value="react">React 관련 질문</option>
+              <option value="father">느그 아부지 뭐하시노?</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend class="hidden">취업희망 날짜</legend>
+            <p>취업을 희망하는 날짜를 선택해주세요.</p>
+            <label class="dateTimeLabel" for="date">날짜</label>
+            <input type="date" name="date" id="dateLabel" />
+          </fieldset>
+          <fieldset>
+            <p>업무를 시작 하기에 가장 적당한 시간을 고르세요.</p>
+            <legend class="hidden">업무 시작 시간</legend>
+            <label class="dateTimeLabel" for="startTime">시간</label>
+            <input type="time" name="time" id="startTime" />
+          </fieldset>
+          <div class="btnBox">
+            <button type="submit">제출</button>
+            <button type="reset">양식 지우기</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
